@@ -1,0 +1,5 @@
+com/example/tasks/controller/TaskController.class
+com/example/tasks/model/Task.class
+com/example/tasks/repository/TaskRepository.class
+com/example/tasks/SpringbootTasksApplication.class
+com/example/tasks/service/TaskService.class
