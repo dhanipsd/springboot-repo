@@ -24,12 +24,12 @@ jobs:
 
       - name: Build and Push images
         run: |
-          docker build -t ghcr.io/${{ github.repository }}/backend-java:latest ./backend-java
-          docker build -t ghcr.io/${{ github.repository }}/gateway-node:latest ./gateway-node
-          docker build -t ghcr.io/${{ github.repository }}/frontend-react:latest ./frontend-react
-          docker push ghcr.io/${{ github.repository }}/backend-java:latest
-          docker push ghcr.io/${{ github.repository }}/gateway-node:latest
-          docker push ghcr.io/${{ github.repository }}/frontend-react:latest
+          docker build -t ghcr.io/dhanipsd/backend-java:latest .
+          docker build -t ghcr.io/dhanipsd/gateway-node:latest .
+          docker build -t ghcr.io/dhanipsd/frontend-react:latest .
+          docker push ghcr.io/dhanipsd/backend-java:latest
+          docker push ghcr.io/dhanipsd/gateway-node:latest
+          docker push ghcr.io/dhanipsd/frontend-react:latest
 
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v0.1.10
